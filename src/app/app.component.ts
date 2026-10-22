@@ -5,11 +5,13 @@ import { ProductCategoryMenuComponent } from './components/product-category-menu
 import { SearchComponent } from './components/search/search.component';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { LoginStatusComponent } from './components/login-status/login-status.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { OktaAuthModule } from '@okta/okta-angular';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ProductListComponent,RouterLink,RouterLinkActive,ProductCategoryMenuComponent,SearchComponent,NgbModule,CartStatusComponent,ReactiveFormsModule],
+  imports: [RouterOutlet,ProductListComponent,RouterLink,RouterLinkActive,ProductCategoryMenuComponent,SearchComponent,NgbModule,CartStatusComponent,ReactiveFormsModule,LoginStatusComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
